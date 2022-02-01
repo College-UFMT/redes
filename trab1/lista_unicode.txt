@@ -1,0 +1,55 @@
+Rótulos = nuvem, clima, coração, telefone, computador, musica, seta
+
+nuvem: 
+U+2601
+U+26C8
+U+1F325
+U+1F327
+U+1F328
+U+1F32A
+
+
+clima:
+'U+1F327',
+'U+2600',
+'U+2601',
+'U+26C7',
+'U+1F305',
+'U+1F321',
+'U+1F305',
+'U+1F325',
+'U+1F32A',
+'U+1F32C'
+
+coracao:
+'U+2665','U+2763','U+2766','U+1F0B1','U+1F394','U+1F496'
+
+telefone:
+'U+2121','U+260E','U+2706','U+1F57C','U+1F57D','U+1F57F'
+
+computador:
+'U+1F4BB','U+1F5A5','U+1F5A7','U+1F5B3'
+
+
+seta : 
+'U+02C2','U+02C3','U+02F0','U+02F1','U+2195'
+
+Requests:
+Resource 1 - GET /res=1 HTTP/1.1
+Resource 2 - GET /res=2&label='labelname' HTTP/1.1
+Resource 3 - GET /res=3 HTTP/1.1
+Resource 4 - 
+POST / HTTP/1.1
+
+unicode='charUnicode'&label1='labelName'...&label[i]='labelName'
+
+Resource 5 - 
+DELETE /unicode='charUnicode' HTTP/1.1
+
+1. Retornar uma lista dos caracteres associados a um determinado rótulo, como descrito acima;
+2. Informar a quantidade de caracteres cadastrados;
+3. Listagem de todos os caracteres cadastrados e seus respectivos rótulo;
+Para facilitar o trabalho de manipulação da lista de caracteres do servidor, ofereça também
+funcionalidades para:
+4. Cadastrar um novo caracter na lista do servidor juntamente com seus respectivos rótulos
+5. Remover um caracter da lista do servidor
